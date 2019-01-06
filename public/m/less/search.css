@@ -1,0 +1,105 @@
+/* 乐淘主题色 */
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+li {
+  list-style: none;
+}
+a {
+  color: #666;
+}
+body {
+  max-width: 750px;
+  margin: 0px auto;
+  font-size: .14rem;
+  line-height: .14rem;
+}
+body {
+  padding: .45rem 0;
+  height: 100vh;
+}
+/* 头部区域样式 */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  background-color: #006699;
+}
+#header .left {
+  width: .45rem;
+  height: .45rem;
+  line-height: .45rem;
+  color: #fff;
+}
+#header .center {
+  flex: 1;
+  margin: 0;
+  line-height: .45rem;
+  color: #fff;
+  font-weight: normal;
+}
+#header .center input {
+  margin-bottom: 0;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+}
+#header .right {
+  width: .45rem;
+  height: .45rem;
+  line-height: .45rem;
+  color: #fff;
+}
+/* 中间部分样式 */
+#main {
+  position: relative;
+  height: 100%;
+}
+/* 底部区域样式 */
+#footer {
+  background-color: #006699;
+  height: .45rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+}
+#footer a {
+  display: flex;
+  height: .45rem;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main .search-form form {
+  display: flex;
+}
+#main .search-form form .input-search {
+  margin-bottom: 0;
+  background-color: #fff;
+  text-align: left;
+  font-size: .14rem;
+  border: 1px solid #006699;
+  border-radius: .06rem 0 0 .06rem;
+}
+#main .search-form form button {
+  font-size: .14rem;
+  border-radius: 0 .06rem .06rem 0;
+  background-color: #006699;
+}
+#main .search-history .mui-card .mui-card-header {
+  font-size: .14rem;
+}
+#main .search-history .mui-card-content .mui-badge {
+  background-color: blue;
+}

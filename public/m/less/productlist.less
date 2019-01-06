@@ -1,0 +1,44 @@
+@import 'base.less';
+
+#main {
+    .product-list {
+        .mui-card-header {
+            font-size: .14rem;
+            a{
+                &.active{
+                    color: red;
+                }
+            }
+        } // 卡片内容
+        .mui-card-content {
+            .mui-row {
+                >div {
+                    &:nth-child(odd){
+                        padding-right: .05rem;
+                    }
+                    &:nth-child(even){
+                        padding-right: .05rem;
+                    }
+                    a{
+                        display: block;
+                        text-align: center;
+                        padding-bottom: .1rem;                        
+                        box-shadow: 0px 0px 2px #ccc;                        
+                        img{
+                            width: 100%;
+                        }
+                        // 文字默认显示2行,然后超出隐藏
+                        .product-name {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box; //作为弹性伸缩盒子模型显示。
+                            -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                            -webkit-line-clamp: 2; //显示的行
+                            line-height: .16rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
